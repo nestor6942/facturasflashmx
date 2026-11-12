@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FacturaFlash MX | Facturación de Tickets por WhatsApp en México</title>
+    <meta name="description" content="¿Tickets arrugados en la guantera? Factura todos tus gastos y compras en México con solo mandar foto por WhatsApp. CFDI 4.0, XML, PDF y reporte en Excel garantizados.">
+    <meta name="keywords" content="facturar tickets, facturacion por whatsapp, CFDI 4.0, facturas oxxo, farmacias guadalajara, walmart, deducir impuestos SAT, guadalajara jalisco">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Background Glow Elements -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+    <div class="glow-grid"></div>
+
+    <!-- Header / Nav -->
+    <header class="navbar">
+        <div class="container nav-content">
+            <a href="#" class="logo">
+                <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+                <div class="logo-text">Factura<span>Flash</span> <small>MX</small></div>
+            </a>
+            <nav class="nav-links">
+                <a href="#como-funciona">¿Cómo funciona?</a>
+                <a href="#precios">Precios</a>
+                <a href="#tiendas">Tiendas</a>
+                <a href="#faq">Preguntas</a>
+            </nav>
+            <a href="https://wa.me/523335952229?text=Hola%20FacturaFlash!%20Tengo%20unos%20tickets%20que%20quiero%20facturar" target="_blank" class="btn-primary nav-cta">
+                <i class="fa-brands fa-whatsapp"></i> Enviar Tickets
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <div class="badge-pill">
+                    <span class="pulse-dot"></span> Servicio Nacional • Cobertura en todo México 🇲🇽
+                </div>
+                <h1 class="hero-title">
+                    Tus tickets arrugados en <span class="gradient-text">facturas deducibles</span> sin mover un dedo
+                </h1>
+                <p class="hero-desc">
+                    No pierdas dinero ni pases horas peleando con portales caídos. <strong>Tómale foto a tus tickets</strong>, mándalos por WhatsApp y recibe tus <strong>CFDI 4.0 timbrados (XML y PDF)</strong> directo en tu correo junto con tu reporte en Excel.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="https://wa.me/523335952229?text=Hola%20FacturaFlash!%20Tengo%20unos%20tickets%20que%20quiero%20facturar,%20me%20das%20informes?" target="_blank" class="btn-whatsapp-large" id="btn-hero-cta">
+                        <i class="fa-brands fa-whatsapp"></i>
+                        <div>
+                            <span>Factura ahora por WhatsApp</span>
+                            <small>Respuesta rápida • 33 3595 2229</small>
+                        </div>
+                    </a>
+                    <a href="#calculadora" class="btn-secondary">
+                        <i class="fa-solid fa-calculator"></i> Cotizar mis tickets
+                    </a>
+                </div>
+
+                <div class="trust-stats">
+                    <div class="stat-item">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>100% Válido ante el SAT</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fa-solid fa-clock-rotate-left"></i>
+                        <span>Entrega el mismo día</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fa-solid fa-file-excel"></i>
+                        <span>Hoja de control incluida</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="visual-card-glass">
+                    <div class="card-header">
+                        <div class="header-left">
+                            <i class="fa-brands fa-whatsapp" style="color:#25d366; font-size:1.4rem;"></i>
+                            <div>
+                                <strong>FacturaFlash MX Concierge</strong>
+                                <span class="online-status">En línea ahora</span>
+                            </div>
+                        </div>
+                        <span class="badge-cfdi">CFDI 4.0</span>
+                    </div>
+
+                    <div class="chat-preview">
+                        <!-- User message -->
+                        <div class="chat-bubble user">
+                            <div class="bubble-image-preview">
+                                <i class="fa-solid fa-receipt"></i>
+                                <span>Ticket_Oxxo_Farmacias.jpg</span>
+                            </div>
+                            <p>¡Hola! Tengo 15 tickets de la semana para deducir de mi negocio 🙏</p>
+                            <span class="msg-time">10:14 AM <i class="fa-solid fa-check-double"></i></span>
+                        </div>
+
+                        <!-- System response -->
+                        <div class="chat-bubble bot">
+                            <p>¡Recibido! Procesando códigos fiscales, folios y portal por portal... ⚡</p>
+                            <div class="processing-bar">
+                                <div class="bar-fill"></div>
+                            </div>
+                            <span class="msg-time">10:15 AM</span>
+                        </div>
+
+                        <!-- Delivery message -->
+                        <div class="chat-bubble bot success-delivery">
+                            <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+                            <div>
+                                <strong>¡Listo! 15 Facturas Timbradas</strong>
+                                <p>Archivos XML y PDF enviados a tu correo. Tu hoja de Excel de gastos está lista.</p>
+                                <div class="file-badges">
+                                    <span class="badge-file xml"><i class="fa-solid fa-code"></i> 15 XML</span>
+                                    <span class="badge-file pdf"><i class="fa-solid fa-file-pdf"></i> 15 PDF</span>
+                                    <span class="badge-file xls"><i class="fa-solid fa-table"></i> Control.xlsx</span>
+                                </div>
+                            </div>
+                            <span class="msg-time">10:32 AM</span>
+                        </div>
+                    </div>
+
+                    <div class="visual-footer">
+                        <span>Ahorro promedio de nuestros clientes:</span>
+                        <strong>4 a 6 horas de trabajo manual</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Point Section -->
+    <section class="section-pain">
+        <div class="container">
+            <div class="section-heading text-center">
+                <span class="sub-badge">¿Te resulta familiar?</span>
+                <h2>El dolor de cabeza de facturar en México</h2>
+                <p>Cada mes se pierden millones de pesos en deducciones por tickets que nunca se facturan.</p>
+            </div>
+
+            <div class="pain-grid">
+                <div class="pain-card">
+                    <div class="pain-icon"><i class="fa-solid fa-car-tunnel"></i></div>
+                    <h3>Guanteras y carteras llenas</h3>
+                    <p>Vas acumulando tickets de gasolina, comidas, farmacias y papelería pensando en facturarlos el fin de semana... pero nunca tienes tiempo.</p>
+                </div>
+
+                <div class="pain-card">
+                    <div class="pain-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
+                    <h3>Portales lentos que se caen</h3>
+                    <p>Capturas códigos de 24 caracteres, te sale error de servidor, captchas ilegibles o la página simplemente no abre. Pura frustración.</p>
+                </div>
+
+                <div class="pain-card">
+                    <div class="pain-icon"><i class="fa-solid fa-money-bill-transfer"></i></div>
+                    <h3>Impuestos que pagas de más</h3>
+                    <p>Gasto no facturado es gasto que no puedes deducir. Al final del mes tu contador te dice que tienes que pagar más ISR e IVA.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="section-how" id="como-funciona">
+        <div class="container">
+            <div class="section-heading text-center">
+                <span class="sub-badge">Proceso Ultrarrápido</span>
+                <h2>Factura en 3 sencillos pasos</h2>
+                <p>Sin descargar apps raras, sin crear cuentas complejas. Todo por el canal que ya usas a diario.</p>
+            </div>
+
+            <div class="steps-container">
+                <div class="step-card">
+                    <div class="step-number">01</div>
+                    <div class="step-icon"><i class="fa-solid fa-camera"></i></div>
+                    <h3>Envía tus fotos</h3>
+                    <p>Tómale foto clara a tus tickets de compra y envíanos tu Constancia de Situación Fiscal o tus datos fiscales por WhatsApp.</p>
+                </div>
+
+                <div class="step-divider"><i class="fa-solid fa-chevron-right"></i></div>
+
+                <div class="step-card">
+                    <div class="step-number">02</div>
+                    <div class="step-icon"><i class="fa-solid fa-microchip"></i></div>
+                    <h3>Nosotros nos peleamos con los portales</h3>
+                    <p>Extraemos folios, tiendas, montos y timbramos portal por portal con nuestras herramientas automáticas en minutos.</p>
+                </div>
+
+                <div class="step-divider"><i class="fa-solid fa-chevron-right"></i></div>
+
+                <div class="step-card">
+                    <div class="step-number">03</div>
+                    <div class="step-icon"><i class="fa-solid fa-envelope-circle-check"></i></div>
+                    <h3>Recibe tus CFDI y tu Excel</h3>
+                    <p>Te enviamos por correo y WhatsApp los archivos XML y PDF de cada factura timbrada, más un Excel ordenado para tu contador.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Calculator Section -->
+    <section class="section-calc" id="calculadora">
+        <div class="container">
+            <div class="calc-box">
+                <div class="calc-header">
+                    <h2><i class="fa-solid fa-calculator" style="color:var(--emerald);"></i> Calculadora de Facturación y Ahorro</h2>
+                    <p>Elige cuántos tickets tienes este mes y descubre lo poco que cuesta tener tu contabilidad en orden.</p>
+                </div>
+
+                <div class="calc-body">
+                    <div class="calc-control">
+                        <label for="ticketRange">¿Cuántos tickets necesitas facturar?: <strong id="ticketCountDisplay">15 tickets</strong></label>
+                        <input type="range" id="ticketRange" min="5" max="100" value="15" step="1">
+                        <div class="range-markers">
+                            <span>5 tickets</span>
+                            <span>25 tickets</span>
+                            <span>50 tickets</span>
+                            <span>100+ tickets</span>
+                        </div>
+                    </div>
+
+                    <div class="calc-results-grid">
+                        <div class="calc-result-card">
+                            <span>Inversión del servicio</span>
+                            <div class="result-price" id="calcPrice">$225 MXN</div>
+                            <small id="calcPricePerTicket">$15.00 MXN por ticket</small>
+                        </div>
+
+                        <div class="calc-result-card highlight">
+                            <span>Tiempo que te ahorras</span>
+                            <div class="result-price" id="calcHoursSaved">~2.5 Horas</div>
+                            <small>Para dedicarlo a tu negocio o familia</small>
+                        </div>
+
+                        <div class="calc-result-card">
+                            <span>Ahorro fiscal estimado</span>
+                            <div class="result-price" style="color:var(--cyan);" id="calcTaxSaved">+$720 MXN</div>
+                            <small>Deduciendo IVA e ISR de tus compras</small>
+                        </div>
+                    </div>
+
+                    <div class="calc-cta text-center">
+                        <a href="https://wa.me/523335952229?text=Hola%20FacturaFlash!%20Tengo%2015%20tickets%20para%20facturar,%20quiero%20el%20servicio" target="_blank" class="btn-whatsapp-large" id="btn-calc-whatsapp">
+                            <i class="fa-brands fa-whatsapp"></i> Facturar estos tickets ahora
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Packages -->
+    <section class="section-pricing" id="precios">
+        <div class="container">
+            <div class="section-heading text-center">
+                <span class="sub-badge">Precios Claros y Transparentes</span>
+                <h2>Planes a la medida de tus gastos</h2>
+                <p>Sin suscripciones forzosas. Pagas únicamente por lo que facturas.</p>
+            </div>
+
+            <div class="pricing-grid">
+                <!-- Plan Express -->
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3>Express</h3>
+                        <p>Para salir de un apuro rápido</p>
+                        <div class="price-amount">$180 <span>MXN</span></div>
+                        <small>Hasta 10 tickets ($18 / ticket)</small>
+                    </div>
+                    <ul class="price-features">
+                        <li><i class="fa-solid fa-check"></i> Hasta 10 tickets de compra</li>
+                        <li><i class="fa-solid fa-check"></i> CFDI 4.0 timbrado ante el SAT</li>
+                        <li><i class="fa-solid fa-check"></i> Archivos XML y PDF a tu correo</li>
+                        <li><i class="fa-solid fa-check"></i> Hoja de cálculo de control</li>
+                        <li><i class="fa-solid fa-check"></i> Entrega en 2 a 4 horas</li>
+                    </ul>
+                    <a href="https://wa.me/523335952229?text=Hola%20FacturaFlash!%20Quiero%20el%20Plan%20Express%20(hasta%2010%20tickets)" target="_blank" class="btn-outline">
+                        Elegir Express
+                    </a>
+                </div>
+
+                <!-- Plan Emprendedor (Popular) -->
+                <div class="price-card popular">
+                    <div class="popular-ribbon">MÁS POPULAR</div>
+                    <div class="price-header">
+                        <h3>Emprendedor</h3>
+                        <p>Ideal para gastos quincenales o mensuales</p>
+                        <div class="price-amount">$375 <span>MXN</span></div>
+                        <small>Hasta 25 tickets ($15 / ticket)</small>
+                    </div>
+                    <ul class="price-features">
+                        <li><i class="fa-solid fa-check"></i> <strong>Hasta 25 tickets de compra</strong></li>
+                        <li><i class="fa-solid fa-check"></i> CFDI 4.0 timbrado ante el SAT</li>
+                        <li><i class="fa-solid fa-check"></i> Archivos XML y PDF descargados y ordenados</li>
+                        <li><i class="fa-solid fa-check"></i> <strong>Reporte en Excel detallado para contador</strong></li>
+                        <li><i class="fa-solid fa-check"></i> Detección y aviso de duplicados o caducados</li>
+                        <li><i class="fa-solid fa-check"></i> Entrega prioritaria</li>
+                    </ul>
+                    <a href="https://wa.me/523335952229?text=Hola%20FacturaFlash!%20Quiero%20el%20Plan%20Emprendedor%20(hasta%2025%20tickets)" target="_blank" class="btn-primary">
+                        Elegir Emprendedor
+                    </a>
+                </div>
+
+                <!-- Plan Negocio / Viáticos -->
+                <div class="price-card">
+                    <div class="price-header">
+                        <h3>Negocio / Viáticos</h3>
+                        <p>Para profesionistas que viajan o pymes</p>
+                        <div class="price-amount">$650 <span>MXN</span></div>
+                        <small>Hasta 50 tickets ($13 / ticket)</small>
+                    </div>
+                    <ul class="price-features">
+                        <li><i class="fa-solid fa-check"></i> Hasta 50 tickets de compra</li>
+                        <li><i class="fa-solid fa-check"></i> CFDI 4.0 timbrado ante el SAT</li>
+                        <li><i class="fa-solid fa-check"></i> Organización en carpetas por fecha y tienda</li>
+                        <li><i class="fa-solid fa-check"></i> Reporte contable conciliado en Excel</li>
+                        <li><i class="fa-solid fa-check"></i> Atención VIP por WhatsApp</li>
+                        <li><i class="fa-solid fa-check"></i> Envío directo a tu despacho contable si lo deseas</li>
+                    </ul>
+                    <a href="https://wa.me/523335952229?text=Hola%20FacturaFlash!%20Quiero%20el%20Plan%20Negocio%20(hasta%2050%20tickets)" target="_blank" class="btn-outline">
+                        Elegir Negocio
+                    </a>
+                </div>
+            </div>
+
+            <div class="accountant-banner">
+                <div class="accountant-text">
+                    <h4><i class="fa-solid fa-briefcase"></i> ¿Eres Contador o Despacho Contable?</h4>
+                    <p>Déjanos la captura de tickets a nosotros y ahorra decenas de horas a tu equipo. Tenemos convenios especiales de facturación masiva mensual.</p>
+                </div>
+                <a href="https://wa.me/523335952229?text=Hola%20FacturaFlash!%20Soy%20contador/tengo%20un%20despacho%20y%20me%20interesa%20un%20convenio" target="_blank" class="btn-secondary">
+                    Plan para Despachos
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Supported Stores -->
+    <section class="section-stores" id="tiendas">
+        <div class="container text-center">
+            <span class="sub-badge">Cobertura Total</span>
+            <h2>Procesamos tickets de todo tipo de cadenas y negocios</h2>
+            <p>Conocemos los portales y trucos de cada tienda en México para que tus facturas salgan sí o sí.</p>
+
+            <div class="store-tags-grid">
+                <div class="store-tag"><i class="fa-solid fa-shop"></i> OXXO / Bara</div>
+                <div class="store-tag"><i class="fa-solid fa-capsules"></i> Farmacias Guadalajara</div>
+                <div class="store-tag"><i class="fa-solid fa-pills"></i> Farmacias del Ahorro / Benavides</div>
+                <div class="store-tag"><i class="fa-solid fa-cart-shopping"></i> Walmart / Bodega Aurrera / Sam's Club</div>
+                <div class="store-tag"><i class="fa-solid fa-basket-shopping"></i> Soriana / Chedraui / HEB</div>
+                <div class="store-tag"><i class="fa-solid fa-store"></i> Tiendas 3B / Neto</div>
+                <div class="store-tag"><i class="fa-solid fa-gas-pump"></i> Gasolineras (Pemex, OXXO Gas, Shell, BP, etc.)</div>
+                <div class="store-tag"><i class="fa-solid fa-utensils"></i> Restaurantes y Cafeterías</div>
+                <div class="store-tag"><i class="fa-solid fa-scissors"></i> Parisina / Modatelas</div>
+                <div class="store-tag"><i class="fa-solid fa-pen-ruler"></i> Office Depot / Papelerías</div>
+                <div class="store-tag"><i class="fa-solid fa-drumstick-bite"></i> Carnicerías (Bafar, CarneMart, SuKarne)</div>
+                <div class="store-tag"><i class="fa-solid fa-boxes-packing"></i> Negocios Locales con portal web</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section-faq" id="faq">
+        <div class="container max-w-800">
+            <div class="section-heading text-center">
+                <span class="sub-badge">Resuelve tus dudas</span>
+                <h2>Preguntas Frecuentes</h2>
+            </div>
+
+            <div class="accordion">
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>¿Qué datos necesitan para facturar mis tickets?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Solo necesitamos fotos legibles de tus tickets y tu Constancia de Situación Fiscal actualizada (o en texto tu RFC, Razón Social, Régimen Fiscal, Código Postal y Uso de CFDI que prefieras, por ejemplo G03 Gastos en General).</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>¿Cómo sé que las facturas son 100% auténticas ante el SAT?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Cada factura que emitimos se timbra directamente en el portal oficial del establecimiento comercial. Recibes el archivo <strong>XML nativo con su UUID o Folio Fiscal oficial del SAT</strong> y su PDF con el sello digital del Proveedor Autorizado de Certificación (PAC). Puedes verificar cualquiera en el portal del SAT en un clic.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>¿Qué pasa si un ticket ya expiró o no se puede facturar?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Muchas cadenas dan entre 7 y 30 días naturales para facturar. Si un ticket resulta que ya caducó por fecha de la tienda o fue facturado previamente, te avisamos de inmediato en tu reporte de control y <strong>no se contabiliza en tu paquete</strong> para que puedas reemplazarlo por otro.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>¿En cuánto tiempo entregan mis facturas?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Para paquetes estándar (10 a 25 tickets), la entrega es <strong>el mismo día</strong> (habitualmente en 2 a 4 horas). Si tienes una urgencia de fin de mes porque hoy vence el plazo, avísanos en WhatsApp y le damos prioridad inmediata.</p>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>¿Cómo se realiza el pago del servicio?</span>
+                        <i class="fa-solid fa-plus"></i>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Aceptamos transferencia electrónica directa (SPEI / BBVA / Santander) o depósito en OXXO. Te mandamos tu reporte y vista previa de facturas para tu total tranquilidad.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Final Call to Action -->
+    <section class="section-cta-final">
+        <div class="container text-center">
+            <div class="cta-box-glass">
+                <h2>¿Tienes una bolsa de tickets esperando?</h2>
+                <p>No dejes que venza el mes. Sácale foto ahora mismo y deduce tus impuestos sin estrés.</p>
+                <a href="https://wa.me/523335952229?text=Hola%20FacturaFlash!%20Quiero%20facturar%20unos%20tickets%20hoy%20mismo" target="_blank" class="btn-whatsapp-giant">
+                    <i class="fa-brands fa-whatsapp"></i> Mandar mis tickets por WhatsApp al 33 3595 2229
+                </a>
+                <small class="cta-note"><i class="fa-solid fa-shield"></i> Tus datos fiscales están 100% protegidos y solo se usan para tus facturas.</small>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <div class="logo">
+                    <div class="logo-icon"><i class="fa-solid fa-bolt"></i></div>
+                    <div class="logo-text">Factura<span>Flash</span> <small>MX</small></div>
+                </div>
+                <p>Servicio profesional de conciliación y facturación electrónica CFDI 4.0 en México.</p>
+                <small>Guadalajara, Jalisco • Cobertura en toda la República Mexicana 🇲🇽</small>
+            </div>
+            <div class="footer-links">
+                <h4>Contacto</h4>
+                <p><i class="fa-brands fa-whatsapp" style="color:var(--emerald);"></i> WhatsApp: <strong>33 3595 2229</strong></p>
+                <p><i class="fa-solid fa-clock"></i> Horario: Lunes a Domingo 8:00 AM - 10:00 PM</p>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <p>&copy; 2026 FacturaFlash MX. Todos los derechos reservados. Las marcas comerciales, logotipos y nombres de tiendas mostrados pertenecen a sus respectivos titulares y se mencionan únicamente con fines de referencia de facturación.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/523335952229?text=Hola%20FacturaFlash!%20Tengo%20unos%20tickets%20que%20quiero%20facturar" target="_blank" class="floating-whatsapp" id="floating-wa" title="Escríbenos por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="wa-tooltip">¿Facturamos tus tickets hoy? 👋</span>
+    </a>
+
+    <!-- Scripts -->
+    <script src="app.js"></script>
+    <!-- Metricool Tracker -->
+    <script>function loadScript(a){var b=document.getElementsByTagName("head")[0],c=document.createElement("script");c.type="text/javascript",c.src="https://tracker.metricool.com/resources/be.js",c.onreadystatechange=a,c.onload=a,b.appendChild(c)}loadScript(function(){beTracker.t({hash:"106dc458346b141e7784ed4cb73177dd"})});</script>
+</body>
+</html>
